@@ -1,0 +1,24 @@
+.pizza-item{
+  display: flex;
+  flex-direction: row;
+}
+
+.undo-button {
+    border:1px solid #7ca2b7;
+    border-radius: 50%; 
+    background-color: white;
+    color: #7ca2b7;
+    padding: 5px 10px;
+    font-size: 36px;
+    margin: 4px 2px;
+    cursor: pointer;  
+}
+
+.undo-button:hover {
+    background-color: #76adca;
+    color:white;
+}
+
+.undo-button:focus {
+  background-color: #d01d8a; 
+}

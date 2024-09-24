@@ -1,0 +1,31 @@
+.size-price{
+    display: flex;
+    flex-direction: column;
+}
+
+.size-price input[type="checkbox"] {
+  accent-color: #7ca2b7;
+  width: 20px;
+  height: 20px;
+}
+
+.price-area{
+    display: flex;
+    font-size: 16px;
+    background-color: #7ca2b7;
+    border-radius: 3px;
+}
+
+.price-area input[type="number"] {
+  width: 100px;
+  padding: 5px;
+  border: 1px solid #7ca2b7;
+  border-radius: 0 3px 3px 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.price-area .dollar{
+    padding: 6px;
+    color: white;
+}
