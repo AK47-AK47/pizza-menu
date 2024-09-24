@@ -1,17 +1,38 @@
-.pizza-item{
-  display: flex;
-  flex-direction: row;
+.pizza-items-container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.pizza-items {
+    display: flex;
+    flex-direction: row;  
 }
 
 .undo-button {
-    border:1px solid #7ca2b7;
-    border-radius: 50%; 
+  
+    width: 50px;
+    height: 50px;
+    border: 1px solid #7ca2b7;
+    border-radius: 100%; 
     background-color: white;
     color: #7ca2b7;
-    padding: 5px 10px;
+    cursor: pointer; 
+    text-align: center;
     font-size: 36px;
-    margin: 4px 2px;
-    cursor: pointer;  
+    
+    /* as A href
+    display:block;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #7ca2b7;
+    border-radius: 100%; 
+    background-color: white;
+    color: #7ca2b7;
+    cursor: pointer;
+    font-size: 36px; 
+    */
 }
 
 .undo-button:hover {
@@ -20,5 +41,5 @@
 }
 
 .undo-button:focus {
-  background-color: #d01d8a; 
+    color: #d01d8a; 
 }

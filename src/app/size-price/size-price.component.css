@@ -1,12 +1,15 @@
 .size-price{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 15px;
 }
 
 .size-price input[type="checkbox"] {
-  accent-color: #7ca2b7;
-  width: 20px;
-  height: 20px;
+    accent-color: #7ca2b7;
+    width: 20px;
+    height: 20px;
 }
 
 .price-area{
@@ -17,12 +20,12 @@
 }
 
 .price-area input[type="number"] {
-  width: 100px;
-  padding: 5px;
-  border: 1px solid #7ca2b7;
-  border-radius: 0 3px 3px 0;
-  text-align: center;
-  font-size: 16px;
+    width: 55px;
+    padding: 5px;
+    border: 1px solid #7ca2b7;
+    border-radius: 0 3px 3px 0;
+    text-align: center;
+    font-size: 16px;
 }
 
 .price-area .dollar{
