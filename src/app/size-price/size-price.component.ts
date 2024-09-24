@@ -1,5 +1,6 @@
 import { Component, Input, OnInit,  } from '@angular/core';
 import { Price, Size } from '../pizza.data';
+import { NumbersOnlyDirective } from '../directives/numbers-only.directive'; 
 
 @Component({
   selector: 'app-size-price',

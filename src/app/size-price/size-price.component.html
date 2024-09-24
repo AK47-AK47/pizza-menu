@@ -3,6 +3,6 @@
   <label [for]='size.name'>{{ size.name }}</label>
   <div class="price-area">
     <span class="dollar">$</span>
-    <input type="number" class="pizza-price" [(ngModel)]="displayPrice" [disabled]="!isChecked">
+    <input type="number" class="pizza-price" [(ngModel)]="displayPrice" [disabled]="!isChecked" numbersOnly>
   </div>
 </div>

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { PizzaMenuComponent } from './pizza-menu/pizza-menu.component';
 import { PizzaItemComponent } from './pizza-item/pizza-item.component';
 import { SizePriceComponent } from './size-price/size-price.component';
+import { NumbersOnlyDirective } from './directives/numbers-only.directive';
 
 
 
@@ -16,6 +17,7 @@ import { SizePriceComponent } from './size-price/size-price.component';
     PizzaMenuComponent,
     PizzaItemComponent,
     SizePriceComponent,
+    NumbersOnlyDirective,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
