@@ -1,0 +1,7 @@
+<p>pizza-item works!</p>
+<div class="pizza-item">
+  {{ pizza.itemId }}
+    <div class="size-prices">
+    <app-size-price *ngFor="let size of sizes; let i = index" [size]="size" [price]="prices[i]"></app-size-price>
+  </div>
+</div>

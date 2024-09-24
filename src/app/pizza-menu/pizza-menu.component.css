@@ -1,0 +1,25 @@
+.accordion {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.accordion-item {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.accordion-header {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+}
+
+.accordion-content.active{
+  display: block;
+}
+
+

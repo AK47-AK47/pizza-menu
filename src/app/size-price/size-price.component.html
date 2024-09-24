@@ -1,0 +1,5 @@
+<p>size-price works!---</p>
+<div class="size-price">
+  <span>{{ size.name }}</span>
+  <input type="number" [(ngModel)]="price.price" (change)="priceChange.emit(price.price)">
+</div>
