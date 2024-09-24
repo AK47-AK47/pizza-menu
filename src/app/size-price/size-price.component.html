@@ -1,8 +1,8 @@
 <div class="size-price">
-  <input type="checkbox" [id]='size.name'>
+  <input type="checkbox" [id]='size.name' [checked]="isChecked" (change)="toggleSelection()">
   <label [for]='size.name'>{{ size.name }}</label>
   <div class="price-area">
     <span class="dollar">$</span>
-    <input type="number" class="pizza-price" [(ngModel)]="price.price" (change)="priceChange.emit(price.price)">
+    <input type="number" class="pizza-price" [(ngModel)]="displayPrice" [disabled]="!isChecked">
   </div>
 </div>
