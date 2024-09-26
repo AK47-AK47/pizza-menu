@@ -8,7 +8,7 @@
       </div>
       <!-- show Undo button when form changes are detected -->
       <div class="undo-button-container" >
-        <button class="undo-button"  *ngIf="showUndoButton$ | async" (click)="resetItem()">⟲</button>
+        <button class="undo-button"  aria-label="undo button"  *ngIf="showUndoButton$ | async" (click)="resetItem()">⟲</button>
       </div>
     </div>
 </form>

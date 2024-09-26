@@ -19,7 +19,6 @@ export class PizzaItemComponent implements OnInit {
     //get initial prices
     this.initialPrices = this.getInitialPrices();
 
-    // check for changes on input formcontrol of pizzaForm and if change then enable undo button
     // Set up the observable to listen for price changes
     this.setupPriceChangeListener();
   }

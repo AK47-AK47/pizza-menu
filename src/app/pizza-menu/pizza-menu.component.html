@@ -2,7 +2,7 @@
 <div class="accordion" id="pizzaAccordion">
   <div *ngFor="let pizza of pizzas.controls as FormArray; let i = index" class="accordion-item" [ngClass]="{ 'active': selectedItemIndex === i }">
     <p class="accordion-title" (click)="selectedItemIndex = i">
-      <i class="arrow" [ngClass]="{ 'down': selectedItemIndex === i, 'up': selectedItemIndex !== i }"></i>
+      <span class="arrow" [ngClass]="{ 'down': selectedItemIndex === i, 'up': selectedItemIndex !== i }"></span>
       {{ pizza.get('name')?.value }}
   </p>
     <div class="accordion-body" *ngIf="selectedItemIndex === i">

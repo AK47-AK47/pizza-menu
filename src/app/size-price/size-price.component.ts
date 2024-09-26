@@ -17,8 +17,9 @@ export class SizePriceComponent implements OnInit, OnDestroy {
     // Initialize previousPrice with the initial value of the price
     this.previousPrice = this.sizeForm.get('price')?.value;
 
+    // Subscribe to changes for checkbox field
     this.isChecked.valueChanges
-      .pipe(debounceTime(100), distinctUntilChanged(), takeUntil(this.destroy$))
+      .pipe(takeUntil(this.destroy$))
       .subscribe((isChecked) => {
         if (!isChecked) {
           // Save the current price before setting it to 0

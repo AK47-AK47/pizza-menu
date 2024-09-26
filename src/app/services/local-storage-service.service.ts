@@ -11,10 +11,6 @@ export class LocalStorageService {
   }
 
   saveChanges(formData: { pizzas: any; }, storageKey:string): void {
-    // console.log(formData.pizzas);
-    // formData.pizzas.forEach(pizzaElement => {
-    //   console.log(pizzaElement[0]);
-    // });
     localStorage.setItem(storageKey, JSON.stringify(formData.pizzas));
   }
 }
