@@ -1,7 +1,14 @@
-<div class="pizza-items-container">
-    <div class="pizza-items">
-        <app-size-price *ngFor="let size of sizes; let i = index" [size]="size" [price]="prices[i]" ></app-size-price>
+<form [formGroup]="pizzaForm">
+    <div class="pizza-items-container" formArrayName="sizes">
+      <div class="pizza-items" >
+        <div *ngFor="let size of sizes.controls as FormArray; let i = index">
+           <!-- Pass each size form group to the size-price component -->
+          <app-size-price [sizeForm]="size" [pizzaItemIndex]="i"></app-size-price>
+        </div>
+      </div>
+      <!-- show Undo button when form changes are detected -->
+      <div class="undo-button-container" >
+        <button class="undo-button"  *ngIf="showUndoButton$ | async" (click)="resetItem()">⟲</button>
+      </div>
     </div>
-    <button class="undo-button">&#10226;</button>
-    <!--<a href="" class="undo-button">&#10226;</a>-->
-</div>
+</form>

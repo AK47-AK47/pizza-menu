@@ -20,17 +20,6 @@
   padding-left: 10px;
 }
 
-
-.accordion-content {
-  display: none;
-  padding: 10px;
-}
-
-.accordion-content.active{
-  display: block;
-}
-
-
 .arrow {
   border: solid black;
   border-width: 0 2px 2px 0;
