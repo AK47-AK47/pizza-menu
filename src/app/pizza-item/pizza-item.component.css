@@ -37,3 +37,20 @@
 .undo-sign{
     margin: 20px;
 }
+
+
+@media (max-width: 768px) {
+    /* Styles for mobile devices */
+    .pizza-items {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+
+
+    .pizza-items-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
